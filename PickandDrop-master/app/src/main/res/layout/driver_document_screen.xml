@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="30dp">
+
+        <TextView
+            android:id="@+id/signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Documents"
+            android:textColor="@color/green"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profileImage"
+            android:layout_width="125dp"
+            android:layout_height="115dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/applogo"
+            app:civ_border_color="@color/white"
+            android:layout_gravity="center"
+            app:civ_border_width="1dp"
+            app:civ_circle_background_color="@color/green" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Vehcile Information"
+                android:textColor="@color/green"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/green" />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/vehcle_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/green"
+            android:hint="Vehcile Type"
+            android:inputType="textPersonName"
+            android:textColor="@color/green"
+            android:textColorHint="@color/green"
+            tools:ignore="autofill,TextContrastCheck"/>
+
+        <EditText
+            android:id="@+id/vehicle_no"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/green"
+            android:hint="Vehcile Number"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:textColor="@color/green"
+            android:textColorHint="@color/green"
+            tools:ignore="autofill,TextContrastCheck"/>
+
+        <EditText
+            android:id="@+id/vehicle_seats"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/green"
+            android:hint="Number of Seats"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/green"
+            android:textColorHint="@color/green"
+            tools:ignore="autofill,TextContrastCheck"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/h_white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/FrontSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Upload License Front"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/license_front"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/h_white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/folder"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/h_white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/cnicBackSide"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Police certificate"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/certificate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/h_white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/folder"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+
+        <Button
+            android:id="@+id/Submit_doc"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:minHeight="48dp"
+            android:text="Submit documents"
+            android:textSize="20sp"
+            app:backgroundTint="@null"/>
+    </LinearLayout>
+</ScrollView>

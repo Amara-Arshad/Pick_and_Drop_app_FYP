@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="125dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/applogo"
+        app:civ_border_color="@color/white"
+        android:layout_gravity="center"
+        app:civ_border_width="1dp"
+        android:layout_centerInParent="true"
+        app:civ_circle_background_color="@color/green" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:padding="6dp"
+        android:text="Please wait admin will approve you soon">
+    </TextView>
+
+
+</RelativeLayout>

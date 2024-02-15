@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="?selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/person_image2"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginEnd="12dp"
+                    android:src="@drawable/applogo" />
+
+                <!--<TextView-->
+                <!--android:id="@+id/txt_person_name2"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_toEndOf="@+id/person_image2"-->
+                <!--android:fontFamily="@font/tajawal_medium"-->
+                <!--android:text="@string/no_data"-->
+
+                <!--android:textColor="#2E1A10"-->
+                <!--android:textSize="17sp"-->
+                <!--android:textStyle="bold" />-->
+
+                <TextView
+                    android:id="@+id/txt_person_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/person_image2"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/welcome_in"
+                    android:textColor="#2E1A10"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_person_name2"
+                    android:layout_marginTop="5dp"
+                    android:layout_toEndOf="@+id/person_image2"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Your Name"
+                    android:textColor="#2E1A10"
+                    android:textSize="15sp" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_more_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            app:cardElevation="2dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Email Address"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_1"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/no_thing_found"
+                    android:textColor="#717171"
+
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_1"
+                    android:layout_marginTop="10dp" />
+                <!-- -->
+                <TextView
+                    android:id="@+id/txt_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+
+                    android:text="Mobile Number"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_2"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="00000000000"
+
+                    android:textColor="#717171"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/view_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_2"
+                    android:layout_marginTop="10dp" />
+
+                <!---->
+
+                <TextView
+                    android:id="@+id/txt_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/montserrat"
+                    android:text="Address"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/txt_3"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/montserrat"
+                    android:text="@string/no_thing_found"
+
+                    android:textColor="#717171"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txt_3"
+                    android:layout_marginTop="10dp" />
+                <!---->
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            app:cardElevation="2dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="14dp"
+                android:layout_marginBottom="12dp"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_edit_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_account"
+                    android:drawableEnd="@drawable/ic_arrow_forward"
+                    android:drawablePadding="13sp"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat"
+                    android:foreground="?selectableItemBackground"
+                    android:gravity="center_vertical"
+
+                    android:text="@string/edit_profile"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#F5F5F5" />
+
+
+                <TextView
+                    android:id="@+id/txt_change_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_lock"
+                    android:drawableEnd="@drawable/ic_arrow_forward"
+                    android:drawablePadding="13sp"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat"
+
+                    android:gravity="center_vertical"
+                    android:text="@string/change_password"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#F5F5F5" />
+
+                <TextView
+                    android:id="@+id/txt_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_baseline_feedback_24"
+                    android:drawableEnd="@drawable/ic_arrow_forward"
+                    android:drawablePadding="13sp"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_vertical"
+                    android:text="Your Feedback"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#F5F5F5" />
+
+                <TextView
+                    android:id="@+id/txt_invite_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:drawableStart="@drawable/ic_top_share"
+                    android:drawableEnd="@drawable/ic_arrow_forward"
+                    android:drawablePadding="13sp"
+                    android:focusable="true"
+                    android:fontFamily="@font/montserrat"
+                    android:gravity="center_vertical"
+                    android:text="@string/invite_friends"
+                    android:textColor="#363636"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#F5F5F5" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

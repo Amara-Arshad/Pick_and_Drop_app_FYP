@@ -1,0 +1,121 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        android:padding="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/iv_profile_photo_edit"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/applogo"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Photo"
+            android:id="@+id/tv_UploadProfilePhoto_edit"
+            android:layout_below="@+id/iv_profile_photo_edit"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/green"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:id="@+id/et_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/tv_UploadProfilePhoto_edit"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/user_name_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Name"
+                android:padding="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:inputType="text"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/green"
+                />
+
+            <EditText
+                android:id="@+id/user_mobile_number_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="3354******"
+                android:padding="10dp"
+                android:digits="0123456789+"
+                android:maxLength="13"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/code1"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:inputType="number"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/green"
+                />
+            <EditText
+                android:id="@+id/user_email_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:padding="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/green"
+                />
+            <EditText
+                android:id="@+id/user_address_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Address"
+                android:padding="10dp"
+                android:background="@drawable/custom_edittext"
+                android:drawableLeft="@drawable/ic_home"
+                android:drawablePadding="10dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/green"
+                />
+
+
+
+
+            <Button
+                android:id="@+id/edit_btn_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_button"
+                android:text="Update Now"
+                android:layout_marginTop="15dp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

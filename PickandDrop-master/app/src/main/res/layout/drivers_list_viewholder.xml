@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_dr"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/bussdriver" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:text="name"
+            android:textColor="#262628"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_institute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:text="institute"
+            android:textColor="#423A3A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_institute"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:text="address"
+            android:textColor="#423A3A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_starttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:text="start time"
+            android:textColor="#423A3A"
+            android:textSize="12sp" />
+        <TextView
+            android:id="@+id/txt_endtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_starttime"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:text="End time"
+            android:textColor="#423A3A"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_avrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_endtime"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:text="4.0"
+            android:textColor="#423A3A"
+            android:textSize="12sp" />
+
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            style="@android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_avrating"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/img_dr"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="@color/golden"
+            android:scaleX=".5"
+            android:scaleY=".5"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp" />
+
+        <TextView
+            android:id="@+id/btn_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_bar"
+            android:layout_toEndOf="@+id/img_dr"
+            android:background="#FBC02D"
+            android:drawableStart="@drawable/ic_baseline_star_rate_24"
+            android:drawablePadding="10dp"
+            android:padding="5dp"
+            android:text="Rate Driver"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/btn_rate"
+            android:layout_marginTop="10dp"
+            android:background="#E1E1E1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="8dp"
+            android:weightSum="2"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#28A745"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_message"
+                android:drawablePadding="10dp"
+                android:focusable="true"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:text="Message"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+
+            <TextView
+                android:id="@+id/btn_track"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="#FBC02D"
+                android:clickable="true"
+                android:drawableStart="@drawable/ic_baseline_location_searching"
+                android:drawablePadding="10dp"
+                android:focusable="true"
+                android:layout_weight="1"
+                android:foreground="?selectableItemBackgroundBorderless"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="8dp"
+                android:text="Track driver"
+                android:layout_margin="5dp"
+                android:textColor="#fff"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

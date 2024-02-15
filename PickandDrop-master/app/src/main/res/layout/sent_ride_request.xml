@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.fragment.app.FragmentContainerView xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map_view"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout"
+        tools:context=".fragments.MapFragment" />
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/driver_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:textSize="14sp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/institute_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Institute Name"
+            android:textSize="14sp">
+        </TextView>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/montserrat"
+            android:inputType="text"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:text="Enter Number Of Seats"
+            android:textSize="14sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/et_noofseats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/custom_edittext"
+            android:elevation="5dp"
+            android:textSize="16sp"
+            android:hint="Number seats 1-10"
+            android:padding="5dp">
+
+        </EditText>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_sent_request"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:text="Sent Request">
+
+    </Button>
+
+</RelativeLayout>
