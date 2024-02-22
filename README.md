@@ -17,8 +17,8 @@ The main functions of this app are the following.
    -> Notification
    -> Chat
    -> Fare
+   
 **3. User Panel**
-
    -> Account Registration
    -> Verification
    -> User Authentication
