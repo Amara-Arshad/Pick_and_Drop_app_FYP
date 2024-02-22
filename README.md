@@ -1,4 +1,36 @@
+**Programming languages**
+
+I use java language in android application. JAVA is the official language of android development and it is 
+supported by android studio. 
+PHP language is used to make SQL DATA base and for admin penal.
+
+The main functions of this app are the following.
+
+**1. Admin panel**
+   -> Login
+   -> Verification
+   -> Feedback/Complaint
+   
+**2. Driver Panel**
+   -> Verification
+   -> Account Registration
+   -> Notification
+   -> Chat
+   -> Fare
+**3. User Panel**
+
+   -> Account Registration
+   -> Verification
+   -> User Authentication
+   -> Hire Driver
+   -> Cancel Ride/Package
+   -> Chat
+   -> GPS services of Google map
+   -> Driver Rating
+
 **Summary**
+
+
 Most of the users need a transport facility for their children. Users can search for vehicles for their  children, they can hire vehicles on monthly bases via an app online. The students are generally 
 unaware of the location of the vehicles and so might have to wait for a time to catch the vehicles. This app especially provides a transportation facility for students to go to their institute. The user 
 of this application can be parents of students and students themselves. There are a lot of problems occurs when parents searching transport for their children. We would like to overcome these 
